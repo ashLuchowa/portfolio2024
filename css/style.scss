@@ -1,0 +1,68 @@
+/*--------- RESET CSS ---------*/
+@import 'reset';
+
+/*--------- GENERAL ---------*/
+body {
+    background-color: black;
+    color: white;
+}
+
+/*--------- HEADER ---------*/
+header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu-hamburger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: 1px solid white;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+
+.bar {
+    margin-bottom: 5px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+}
+
+.bar:last-child {
+    margin-bottom: 0;
+}
+
+.header-copyright {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+
+/*--------- SECTION ---------*/
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll {
+    position: absolute;
+    filter: blur(10px);
+    transition: filter 0.8s ease-in-out;
+}
+
+.scroll-appear {
+    filter: blur(0px);
+}
