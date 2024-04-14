@@ -5,6 +5,7 @@
 body {
     background-color: black;
     color: white;
+    font-family: "Montserrat", sans-serif;
 }
 
 /*--------- HEADER ---------*/
@@ -14,6 +15,10 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    #main-title {
+        font-size: 100px;
+        font-weight: 400;
+    }
 }
 
 .header-logo {
@@ -59,6 +64,7 @@ section {
 }
 
 .scroll {
+    font-size: 50px;
     position: absolute;
     filter: blur(10px);
     transition: filter 0.8s ease-in-out;
@@ -66,4 +72,24 @@ section {
 
 .scroll-appear {
     filter: blur(0px);
+}
+
+.image-container {
+    opacity: 1;
+    z-index: -1;
+    transition: opacity 0.5s ease-out;
+    img {
+        width: 800px;
+    }
+}
+
+.image-dark {
+    opacity: 0.1;
+}
+
+/*--------- FOOTER ---------*/
+footer {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
 }

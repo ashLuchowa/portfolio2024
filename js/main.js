@@ -21,7 +21,7 @@ function scrollAppear(target) {
 
 function setMargin() {
     targets.forEach((target, index) => {
-        const marginTop = 600 + index * 200;
+        const marginTop = 400 + index * 300;
         target.style.marginTop = `${marginTop}px`;
     });
 }
