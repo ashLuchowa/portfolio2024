@@ -140,6 +140,7 @@ section {
   position: relative;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -149,6 +150,10 @@ section .scroll {
   position: absolute;
   filter: blur(10px);
   transition: filter 0.8s ease-in-out;
+}
+section .scroll a {
+  color: white;
+  text-decoration: none;
 }
 section .scroll-appear {
   filter: blur(0px);

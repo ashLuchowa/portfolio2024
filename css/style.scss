@@ -92,6 +92,7 @@ section {
     position: relative;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     .scroll {
@@ -100,6 +101,10 @@ section {
         position: absolute;
         filter: blur(10px);
         transition: filter 0.8s ease-in-out;
+        a {
+            color: white;
+            text-decoration: none;
+        }
     }
     .scroll-appear {
         filter: blur(0px);
@@ -115,6 +120,16 @@ section {
     .image-dark {
         opacity: 0.1;
     }
+    // .project-explore {
+    //     margin-top: 200px;
+    //     a {
+    //         color: white;
+    //         text-decoration: none;
+    //         border: 2px solid white;
+    //         border-radius: 8px;
+    //         padding: 10px 30px;
+    //     }
+    // }
 }
 
 /*--------- FOOTER ---------*/
