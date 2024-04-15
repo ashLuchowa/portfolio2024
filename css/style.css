@@ -113,7 +113,7 @@ header .resume-menu-container .top-resume a {
   padding: 3px 10px;
   color: white;
   border: 2px solid white;
-  border-radius: 10px;
+  border-radius: 8px;
   text-decoration: none;
 }
 header .resume-menu-container .menu-hamburger {
@@ -177,14 +177,14 @@ header .header-copyright {
 }
 
 /*--------- ABOUT ME ---------*/
-.about-me-section {
-  height: 70vh;
+.other-section {
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.about-me-section .scroll-other {
+.other-section .scroll-other {
   filter: blur(10px);
   display: flex;
   flex-direction: column;
@@ -192,14 +192,14 @@ header .header-copyright {
   align-items: center;
   transition: filter 0.7s ease-out;
 }
-.about-me-section .scroll-other p {
+.other-section .scroll-other p {
   width: 50vw;
   text-align: center;
   font-size: 30px;
   line-height: 35px;
   font-weight: 300;
 }
-.about-me-section .scroll-other .more-about-btn {
+.other-section .scroll-other .more-about-btn {
   font-size: 20px;
   font-weight: 300;
   padding: 10px 15px;
@@ -209,14 +209,15 @@ header .header-copyright {
   text-decoration: none;
   margin-top: 30px;
 }
-.about-me-section .scroll-appear-other {
+.other-section .scroll-appear-other {
   filter: blur(0px);
 }
 
 /*--------- FOOTER ---------*/
-footer {
+.contact-me-section {
   height: 100vh;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

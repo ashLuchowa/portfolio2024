@@ -62,7 +62,7 @@ header {
                 padding: 3px 10px;
                 color: white;
                 border: 2px solid white;
-                border-radius: 10px;
+                border-radius: 8px;
                 text-decoration: none;
             }
         }
@@ -129,8 +129,8 @@ header {
 }
 
 /*--------- ABOUT ME ---------*/
-.about-me-section {
-    height: 70vh;
+.other-section {
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -166,9 +166,10 @@ header {
 }
 
 /*--------- FOOTER ---------*/
-footer {
+.contact-me-section {
     height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
