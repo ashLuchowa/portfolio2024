@@ -136,6 +136,35 @@ header .header-copyright {
   right: 15px;
 }
 
+/* Back to top */
+.back-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  bottom: 45px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgb(63, 63, 63);
+  filter: 0;
+  border-radius: 60px;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+.back-top:hover {
+  border: 1px solid rgb(255, 255, 255);
+}
+.back-top .back-top-content {
+  color: white;
+  font-weight: 500;
+}
+
+.hidden {
+  opacity: 0;
+}
+
 /*--------- SECTION ---------*/
 .featured-projects {
   position: relative;
