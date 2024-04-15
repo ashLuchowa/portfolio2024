@@ -93,8 +93,8 @@ header #para-title {
 }
 header .header-logo {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  top: 15px;
+  left: 15px;
 }
 header .header-logo a {
   color: white;
@@ -103,8 +103,8 @@ header .header-logo a {
 
 .menu-hamburger {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 15px;
+  right: 15px;
   height: 20px;
   width: 20px;
   cursor: pointer;
@@ -123,8 +123,8 @@ header .header-logo a {
 
 .header-copyright {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 15px;
+  right: 15px;
 }
 
 /*--------- SECTION ---------*/

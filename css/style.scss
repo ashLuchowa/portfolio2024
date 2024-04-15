@@ -2,7 +2,7 @@
 @import 'reset';
 
 /*--------- VARIABLES ---------*/
-$container-padding: 20px;
+$container-padding: 15px;
 
 /*--------- GENERAL ---------*/
 body {
@@ -49,34 +49,29 @@ header {
             text-decoration: none;
         }
     }
+    .menu-hamburger {
+        position: fixed;
+        top: $container-padding;
+        right: $container-padding;
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+        .bar {
+            margin-bottom: 5px;
+            height: 3px;
+            border-radius: 20px;
+            background-color: rgb(255, 255, 255);
+        }
+        .bar:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .header-copyright {
+        position: fixed;
+        bottom: $container-padding;
+        right: $container-padding;
+    }
 }
-
-.menu-hamburger {
-    position: fixed;
-    top: $container-padding;
-    right: $container-padding;
-    height: 20px;
-    width: 20px;
-    cursor: pointer;
-}
-
-.bar {
-    margin-bottom: 5px;
-    height: 3px;
-    border-radius: 20px;
-    background-color: rgb(255, 255, 255);
-}
-
-.bar:last-child {
-    margin-bottom: 0;
-}
-
-.header-copyright {
-    position: fixed;
-    bottom: $container-padding;
-    right: $container-padding;
-}
-
 
 /*--------- SECTION ---------*/
 section {
@@ -85,30 +80,26 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.scroll {
-    font-size: 50px;
-    position: absolute;
-    filter: blur(10px);
-    transition: filter 0.8s ease-in-out;
-}
-
-.scroll-appear {
-    filter: blur(0px);
-}
-
-.image-container {
-    opacity: 1;
-    z-index: -1;
-    transition: opacity 0.5s ease-out;
-    img {
-        width: 800px;
+    .scroll {
+        font-size: 50px;
+        position: absolute;
+        filter: blur(10px);
+        transition: filter 0.8s ease-in-out;
     }
-}
-
-.image-dark {
-    opacity: 0.1;
+    .scroll-appear {
+        filter: blur(0px);
+    }
+    .image-container {
+        opacity: 1;
+        z-index: -1;
+        transition: opacity 0.5s ease-out;
+        img {
+            width: 800px;
+        }
+    }
+    .image-dark {
+        opacity: 0.1;
+    }
 }
 
 /*--------- FOOTER ---------*/
