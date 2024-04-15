@@ -1,4 +1,5 @@
 const targets = document.querySelectorAll('.scroll');
+const sections = document.querySelectorAll('.scroll-other');
 
 function scrollParallax(target) {
     scrollPositionY = window.scrollY;
@@ -19,6 +20,17 @@ function scrollAppear(target) {
     }
 }
 
+function scrollAppearOther(section) {
+    let introPosition = section.getBoundingClientRect().top;
+    let screenPosition = window.innerHeight;
+
+    if(introPosition < screenPosition) {
+        section.classList.add('scroll-appear-other');
+    } else {
+        section.classList.remove('scroll-appear-other');
+    }
+}
+
 function setMargin() {
     targets.forEach((target, index) => {
         const marginTop = 400 + index * 300;
@@ -32,4 +44,7 @@ window.addEventListener('scroll', () => {
         scrollParallax(target);
         setMargin();
     });
+    sections.forEach(section => {
+        scrollAppearOther(section);
+    })
 });
