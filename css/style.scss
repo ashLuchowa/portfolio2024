@@ -2,7 +2,7 @@
 @import 'reset';
 
 /*--------- VARIABLES ---------*/
-$container-padding: 15px;
+$container-padding: 30px;
 
 /*--------- GENERAL ---------*/
 body {
@@ -82,7 +82,7 @@ header {
     align-items: center;
     flex-direction: column;
     position: fixed;
-    bottom: $container-padding*3;
+    bottom: $container-padding*2.3;
     right: $container-padding;
     width: 50px;
     height: 50px;
@@ -184,10 +184,30 @@ header {
 }
 
 /*--------- FOOTER ---------*/
-.contact-me-section {
+.contact-section {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    .scroll-other {
+        margin-bottom: 50px;
+        p {
+            font-weight: bold;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+            font-size: 30px;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
