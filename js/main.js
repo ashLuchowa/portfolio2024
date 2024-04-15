@@ -11,7 +11,7 @@ function scrollParallax(target) {
 
 function scrollAppear(target) {
     let introPosition = target.getBoundingClientRect().top;
-    let screenPosition = window.innerHeight;
+    let screenPosition = window.innerHeight / 1.05;
 
     if(introPosition < screenPosition) {
         target.classList.add('scroll-appear');
