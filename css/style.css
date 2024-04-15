@@ -100,28 +100,36 @@ header .header-logo a {
   color: white;
   text-decoration: none;
 }
-
-.menu-hamburger {
+header .resume-menu-container {
+  display: flex;
+  align-items: center;
   position: fixed;
+  grid-gap: 15px;
   top: 15px;
   right: 15px;
+}
+header .resume-menu-container .top-resume a {
+  padding: 3px 10px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+header .resume-menu-container .menu-hamburger {
   height: 20px;
   width: 20px;
   cursor: pointer;
 }
-
-.bar {
+header .resume-menu-container .menu-hamburger .bar {
   margin-bottom: 5px;
   height: 3px;
   border-radius: 20px;
   background-color: rgb(255, 255, 255);
 }
-
-.bar:last-child {
+header .resume-menu-container .menu-hamburger .bar:last-child {
   margin-bottom: 0;
 }
-
-.header-copyright {
+header .header-copyright {
   position: fixed;
   bottom: 15px;
   right: 15px;
@@ -135,28 +143,24 @@ section {
   justify-content: center;
   align-items: center;
 }
-
-.scroll {
+section .scroll {
   font-size: 50px;
   position: absolute;
   filter: blur(10px);
   transition: filter 0.8s ease-in-out;
 }
-
-.scroll-appear {
+section .scroll-appear {
   filter: blur(0px);
 }
-
-.image-container {
+section .image-container {
   opacity: 1;
   z-index: -1;
   transition: opacity 0.5s ease-out;
 }
-.image-container img {
+section .image-container img {
   width: 800px;
 }
-
-.image-dark {
+section .image-dark {
   opacity: 0.1;
 }
 
