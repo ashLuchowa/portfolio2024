@@ -144,7 +144,8 @@ section {
   align-items: center;
 }
 section .scroll {
-  font-size: 50px;
+  font-size: 150px;
+  font-weight: 600;
   position: absolute;
   filter: blur(10px);
   transition: filter 0.8s ease-in-out;
