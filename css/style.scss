@@ -42,6 +42,7 @@ header {
     }
     .header-logo {
         position: fixed;
+        font-weight: bold;
         top: $container-padding;
         left: $container-padding;
         a {
@@ -60,7 +61,7 @@ header {
             a {
                 padding: 3px 10px;
                 color: white;
-                border: 1px solid white;
+                border: 2px solid white;
                 border-radius: 10px;
                 text-decoration: none;
             }
@@ -104,6 +105,11 @@ section {
         a {
             color: white;
             text-decoration: none;
+            border-bottom: 2px solid rgba($color: #ffffff, $alpha: 0);
+            transition: border-bottom 0.2s ease-in-out;
+            &:hover {
+                border-bottom: 2px solid rgba($color: #ffffff, $alpha: 1);
+            }
         }
     }
     .scroll-appear {

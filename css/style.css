@@ -93,6 +93,7 @@ header #para-title {
 }
 header .header-logo {
   position: fixed;
+  font-weight: bold;
   top: 15px;
   left: 15px;
 }
@@ -111,7 +112,7 @@ header .resume-menu-container {
 header .resume-menu-container .top-resume a {
   padding: 3px 10px;
   color: white;
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 10px;
   text-decoration: none;
 }
@@ -154,6 +155,11 @@ section .scroll {
 section .scroll a {
   color: white;
   text-decoration: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  transition: border-bottom 0.2s ease-in-out;
+}
+section .scroll a:hover {
+  border-bottom: 2px solid white;
 }
 section .scroll-appear {
   filter: blur(0px);
