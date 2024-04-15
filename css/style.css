@@ -112,12 +112,16 @@ header .top-menu-container .menu-item a {
   padding: 0 15px;
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 300;
 }
 header .top-menu-container .menu-item a:last-child {
   padding: 0 0 0 15px;
 }
+header .top-menu-container .menu-item #resume-btn {
+  font-weight: bold;
+}
 header .header-copyright {
+  font-weight: 300;
   position: fixed;
   bottom: 30px;
   right: 30px;
@@ -139,6 +143,7 @@ header .header-copyright {
   border-radius: 60px;
   z-index: 3;
   transition: all 0.3s ease;
+  text-decoration: none;
 }
 .back-top:hover {
   border: 1px solid rgb(255, 255, 255);

@@ -61,14 +61,18 @@ header {
                 padding: 0 $container-padding / 2;
                 color: white;
                 text-decoration: none;
-                font-weight: bold;
+                font-weight: 300;
                 &:last-child {
                     padding: 0 0 0 $container-padding / 2;
                 }
             }
+            #resume-btn {
+                font-weight: bold;
+            }
         }
     }
     .header-copyright {
+        font-weight: 300;
         position: fixed;
         bottom: $container-padding;
         right: $container-padding;
@@ -98,6 +102,7 @@ header {
         color: white;
         font-weight: 500;
     }
+    text-decoration: none;
 }
 
 
