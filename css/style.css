@@ -55,6 +55,10 @@ table {
 
 /*--------- VARIABLES ---------*/
 /*--------- GENERAL ---------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: black;
   color: white;
@@ -147,6 +151,7 @@ header .header-copyright {
 }
 .back-top:hover {
   border: 1px solid rgb(255, 255, 255);
+  height: 60px;
 }
 .back-top .back-top-content {
   color: white;
