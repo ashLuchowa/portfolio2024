@@ -87,7 +87,7 @@ header #main-title {
   text-transform: uppercase;
 }
 header #sub-title {
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300;
   margin-bottom: 10px;
 }
@@ -121,14 +121,18 @@ header .top-menu-container .menu-item a {
 header .top-menu-container .menu-item a:last-child {
   padding: 0 0 0 15px;
 }
-header .top-menu-container .menu-item #resume-btn {
-  font-weight: bold;
-}
 header .header-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
   font-weight: 300;
   position: fixed;
   bottom: 30px;
   right: 30px;
+}
+header .header-copyright img {
+  width: 26px;
 }
 
 /* Back to top */
@@ -278,10 +282,40 @@ header .header-copyright {
 .contact-section .scroll-other a {
   color: white;
   text-decoration: none;
-  border-bottom: 2px solid white;
   padding-bottom: 5px;
   font-size: 30px;
 }
 .contact-section .scroll-other:last-child {
   margin-bottom: 0;
+}
+.contact-section .scroll-other #email-address {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.contact-section .scroll-other .contact-social-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.contact-section .scroll-other .contact-social-container .social-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section .scroll-other .contact-social-container img {
+  width: 25px;
+}
+.contact-section .scroll-other .contact-social-container a {
+  border: 0;
+}
+.contact-section .scroll-other .contact-social-container h2 {
+  font-weight: 300;
+  font-size: 20px;
+}
+.contact-section .scroll-other-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }/*# sourceMappingURL=style.css.map */

@@ -35,7 +35,7 @@ header {
         text-transform: uppercase;
     }
     #sub-title {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 300;
         margin-bottom: 10px;
     }
@@ -69,16 +69,20 @@ header {
                     padding: 0 0 0 $container-padding / 2;
                 }
             }
-            #resume-btn {
-                font-weight: bold;
-            }
         }
     }
     .header-copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
         font-weight: 300;
         position: fixed;
         bottom: $container-padding;
         right: $container-padding;
+        img {
+            width: 26px;
+        }
     }
 }
 
@@ -231,12 +235,42 @@ header {
         a {
             color: white;
             text-decoration: none;
-            border-bottom: 2px solid white;
             padding-bottom: 5px;
             font-size: 30px;
         }
         &:last-child {
             margin-bottom: 0;
         }
+        #email-address {
+            border-bottom: 2px solid rgb(255, 255, 255);
+        }
+        .contact-social-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            .social-image-container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            img {
+                width: 25px;
+            }
+            a {
+                border: 0;
+            }
+            h2 {
+                font-weight: 300;
+                font-size: 20px;
+            }
+        }
+    }
+    .scroll-other-social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: $container-padding;
     }
 }

@@ -13,8 +13,9 @@
 
     <header>
         <div class="header-titles">
-            <h1 id="main-title">Ash<br>Luchowa</h1>
-            <h1 id="sub-title">Front-End-Developer</h1>
+            <h1 id="main-title">Ash Luchowa</h1>
+            <h2 id="sub-title">Front-End-Developer, Perth, Australia</h2>
+            <!-- <h2 id="sub-title">Perth, Australia</h2> -->
             <!-- <p id="para-title">Based in Perth and available for hire.</p> -->
         </div>
 
@@ -22,13 +23,16 @@
 
         <div class="top-menu-container">
             <div class="menu-item">
-                <a href="#" id="resume-btn">View Resume</a>
-                <a href="#">About</a>
+                <a href="#" id="resume-btn">Resume</a>
+                <a href="#featured-projects-container">Projects</a>
+                <a href="#about-section">About</a>
                 <a href="#contact-me">Contact</a>
             </div>
         </div>
 
-        <div class="header-copyright">Ash Luchowa &copy 2024 </div>
+        <div class="header-copyright">
+            <div>Ash Luchowa &copy 2024</div>
+        </div>
 
         <!-- Back To Top Btn -->
         <a href="javascript:void(0)" class="back-top hidden">
@@ -36,7 +40,7 @@
         </a>
     </header>
 
-    <section class="featured-projects">
+    <section class="featured-projects" id="featured-projects-container">
         <div class="scroll">
             <a href="#" class="project-link">Georges Garden</a>
         </div>
@@ -64,7 +68,7 @@
         <div class="work-links">
             <a href="#">live preview</a>
             <a href="#">github</a>
-            <a href="#">Case Study</a>
+            <a href="#" id="about-section">Case Study</a>
         </div>
     </section>
 
@@ -80,11 +84,33 @@
     <section class="other-section contact-section">
         <div class="scroll-other" id="contact-me">
             <p>Email</p>
-            <a href="#">ashluchowa@gmail.com</a>
+            <a href="#" id="email-address">ashluchowa@gmail.com</a>
         </div>
-        <div class="scroll-other">
+        <div class="scroll-other scroll-other-phone">
             <p>Phone</p>
-            <a href="#">0426 850 943</a>
+            <a href="#" id="phone-number">0426 850 943</a>
+        </div>
+        <div class="scroll-other scroll-other-social">
+            <a href="#">
+                <div class="contact-social-container">
+                    <div><h2>GitHub</h2></div>
+                    <div class="social-image-container"><img src="assets/github.png" alt=""></div>
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="contact-social-container">
+                    <div><h2>LinkedIn</h2></div>
+                    <div class="social-image-container"><img src="assets/linkedin.png" alt=""></div>
+                </div>
+            </a>
+
+            <a href="#">
+                <div class="contact-social-container">
+                    <div><h2>YouTube</h2></div>
+                    <div class="social-image-container"><img src="assets/youtube.png" alt=""></div>
+                </div>
+            </a>
         </div>
     </section>
 
