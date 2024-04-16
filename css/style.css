@@ -118,8 +118,10 @@ header .top-menu-container .menu-item a {
   text-decoration: none;
   font-weight: 300;
 }
-header .top-menu-container .menu-item a:last-child {
-  padding: 0 0 0 15px;
+header .top-menu-container .menu-item #resume-btn {
+  border: 1px solid rgb(63, 63, 63);
+  padding: 7px 10px;
+  border-radius: 15px;
 }
 header .header-copyright {
   display: flex;
@@ -222,7 +224,7 @@ header .header-copyright img {
 
 /*--------- ABOUT ME ---------*/
 .other-section {
-  height: 60vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -259,6 +261,26 @@ header .header-copyright img {
 }
 .other-section .scroll-appear-other {
   filter: blur(0px);
+}
+.other-section .scroll-about-skills {
+  margin-top: 50px;
+}
+.other-section .scroll-about-skills p {
+  margin-bottom: 30px;
+}
+.other-section .scroll-about-skills .skill-item {
+  width: auto;
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+  border: 1px solid #434343;
+  border-radius: 30px;
+  padding: 20px;
+}
+.other-section .scroll-about-skills .skill-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 /*--------- FOOTER ---------*/

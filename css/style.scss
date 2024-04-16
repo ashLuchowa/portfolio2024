@@ -65,9 +65,11 @@ header {
                 color: white;
                 text-decoration: none;
                 font-weight: 300;
-                &:last-child {
-                    padding: 0 0 0 $container-padding / 2;
-                }
+            }
+            #resume-btn {
+                border: 1px solid rgb(63, 63, 63);
+                padding: 7px 10px;
+                border-radius: 15px;
             }
         }
     }
@@ -112,8 +114,6 @@ header {
     }
     text-decoration: none;
 }
-
-
 
 .hidden {
     opacity: 0;
@@ -177,7 +177,7 @@ header {
 
 /*--------- ABOUT ME ---------*/
 .other-section {
-    height: 60vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -213,6 +213,26 @@ header {
     }
     .scroll-appear-other {
         filter: blur(0px);
+    }
+    .scroll-about-skills {
+        p {
+            margin-bottom: $container-padding;
+        }
+        margin-top: 50px;
+        .skill-item {
+            width: auto;
+            font-size: 20px;
+            font-weight: 300;
+            color: white;
+            border: 1px solid rgba($color: #434343, $alpha: 1);
+            border-radius: 30px;
+            padding: 20px;
+        }
+        .skill-container {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
     }
 }
 
