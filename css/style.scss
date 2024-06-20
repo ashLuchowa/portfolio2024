@@ -317,8 +317,6 @@ header {
             .project-link {
                 color: white;
                 text-decoration: none;
-                border-bottom: 2px solid rgba($color: #ffffff, $alpha: 0);
-                transition: border-bottom 0.2s ease-in-out;
             }
         }
         .work-links {
@@ -335,7 +333,6 @@ header {
             }
         }
     }
-
     #project2 {
         .scroll {
             top: -100px;
@@ -373,6 +370,17 @@ header {
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+            }
+        }
+    }
+
+    // contact
+    .contact-section {
+        .scroll-other {
+            .contact-social-container {
+                h2 {
+                    font-size: 30px;
+                }
             }
         }
     }

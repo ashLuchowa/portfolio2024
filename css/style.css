@@ -361,8 +361,6 @@ header .header-copyright img {
   .featured-projects .scroll .project-link {
     color: white;
     text-decoration: none;
-    border-bottom: 2px solid rgba(255, 255, 255, 0);
-    transition: border-bottom 0.2s ease-in-out;
   }
   .featured-projects .work-links a {
     font-size: 20px;
@@ -406,5 +404,8 @@ header .header-copyright img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .contact-section .scroll-other .contact-social-container h2 {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
