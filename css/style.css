@@ -195,17 +195,13 @@ header .header-copyright img {
   border-bottom: 2px solid white;
 }
 .featured-projects .work-links a {
+  font-size: 25px;
   text-decoration: none;
   font-weight: 500;
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0);
-  border-radius: 40px;
-  padding: 30px;
+  border-bottom: 1px solid white;
+  padding: 20px;
   margin: 0 10px;
-  transition: all 0.2s ease-in-out;
-}
-.featured-projects .work-links a:hover {
-  border: 1px solid white;
 }
 .featured-projects .scroll-appear {
   filter: blur(0px);
@@ -340,4 +336,75 @@ header .header-copyright img {
   justify-content: center;
   align-items: center;
   gap: 30px;
+}
+
+/*--------- MEDIA QUERIES ---------*/
+@media (max-width: 1100px) {
+  header #main-title {
+    padding: 0 40px;
+    font-size: 95px;
+    margin-bottom: 15px;
+  }
+  header #sub-title {
+    font-size: 30px;
+  }
+  .featured-projects {
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .featured-projects .scroll {
+    top: 80px;
+    font-size: 70px;
+    text-align: center;
+  }
+  .featured-projects .scroll .project-link {
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    transition: border-bottom 0.2s ease-in-out;
+  }
+  .featured-projects .work-links a {
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 20px;
+  }
+  .featured-projects .image-container img {
+    width: 500px;
+  }
+  #project2 .scroll {
+    top: -100px;
+  }
+  .other-section .scroll-other {
+    filter: blur(10px);
+  }
+  .other-section .scroll-other #about-para {
+    margin-bottom: 100px;
+    line-height: 45px;
+  }
+  .other-section .scroll-appear-other {
+    filter: blur(0px);
+  }
+  .other-section .scroll-about-skills {
+    margin-top: 50px;
+  }
+  .other-section .scroll-about-skills p {
+    margin-bottom: 30px;
+  }
+  .other-section .scroll-about-skills .skill-item {
+    font-size: 25px;
+    padding: 15px;
+  }
+  .other-section .scroll-about-skills .skill-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .other-section .scroll-about-skills .skill-container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
