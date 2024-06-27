@@ -191,8 +191,11 @@ header .header-copyright img {
   border-bottom: 2px solid rgba(255, 255, 255, 0);
   transition: border-bottom 0.2s ease-in-out;
 }
-.featured-projects .scroll .project-link:hover {
-  border-bottom: 2px solid white;
+.featured-projects .scroll .project-description {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  text-transform: none;
 }
 .featured-projects .work-links a {
   font-size: 25px;
@@ -212,7 +215,8 @@ header .header-copyright img {
   transition: opacity 0.5s ease-out;
 }
 .featured-projects .image-container img {
-  width: 800px;
+  width: auto;
+  opacity: 0.15;
 }
 .featured-projects .image-dark {
   opacity: 0.1;
